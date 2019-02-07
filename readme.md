@@ -60,7 +60,7 @@ forever start --minUptime 1000 --spinSleepTime 1000 main.js
 
 
 
-In your browser address bar, type https://127.0.0.1 You will see OpenTrade.
+In your browser address bar type your server IP address to see OpenTrade Exchange.
 
 
 The first registered user will be exchange administrator. 
