@@ -5,25 +5,20 @@ Live version: https://tradegloby.pro/
 
 Step-by-step install instructions:
 
-1. Register on the VPS hosting like this https://m.do.co/c/1ece5d76d5cd
-2. Create "Droplet" Ubuntu 16 x64 / 1GB / 1vCPU / 25 GB SSD
-3. Log in to Droplet over SSH (You will receive a email with IP, username and password)
-4
-
 ```
-[sudo] apt-get update
-[sudo] apt-get install build-essential libssl-dev curl -y
+apt-get update
+apt-get install build-essential libssl-dev curl -y
 curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh -o install_nvm.sh
 bash install_nvm.sh
-[sudo] reboot
+reboot
 
 nvm install 8.0.0
 
-git clone https://github.com/3s3s/opentrade.git
+git clone git@github.com:saydulk/opentrade.git
 cd opentrade
 
-[sudo] npm install 
-[sudo] npm install -g forever
+npm install 
+npm install -g forever
 ```
 
 ## Here is an example of the file ~/opentrade/server/modules/private_constants.js Edit with your configs.
@@ -46,9 +41,15 @@ exports.walletspassphrase = {
 
 ```
 cd ~/opentrade/databaseServer
-[sudo] forever start main.js
+forever start main.js
+# if you see NodeJS Forever package minUptime and spinSleepTime warnings then run below command
+forever start --minUptime 1000 --spinSleepTime 1000 main.js
+
 cd  ~/opentrade/server
-[sudo] forever start main.js
+forever start main.js
+# if you see NodeJS Forever package minUptime and spinSleepTime warnings then run below command
+forever start --minUptime 1000 --spinSleepTime 1000 main.js
+
 ```
 
 In your browser address bar, type https://127.0.0.1
@@ -130,18 +131,7 @@ const TRADE_COMISSION = 0.001;
 
 After that, you coins should appear on the main page.
 
-
-
-**Donate**
-If you find this script is useful then consider donate please
-
-Bitcoin 36WA1WESULub6Q434bQcnmpnk62oLD7vuQ
-
-Marycoin M9dKNcBYgrbbE2f4tz3ud32KLKj1i9FrmN
-
-Dogecoin DCJRhs9Pjr2FBrrUbKvFeWcYC6ZaF2GTAx
-
-Litecoin LTbDdTijroJEyXt27apQSnuMY4RoXyjdq2
+If you need to help setup contact with me Skype: helios-sw or send an email aaccou52@gmail.com
 
 # License
 
