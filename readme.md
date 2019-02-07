@@ -136,7 +136,7 @@ const TRADE_COMISSION = 0.001;
 
 After that, you coins should appear on the main page.
 
-If you need to help setup contact with me Skype: helios-sw or send an email aaccou52@gmail.com
+# If you need to help setup contact with me Skype: helios-sw or send an email aaccou52@gmail.com
 
 # License
 
