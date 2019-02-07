@@ -103,7 +103,7 @@ All visible coins should be appear in the Wallet. You should create default coin
 
 File ~/opentrade/server/constants.js have settings that you can change
 
-https://github.com/3s3s/opentrade/blob/master/server/constants.js
+https://github.com/saydulk/opentrade/blob/master/server/constants.js
 
 ```
 exports.NOREPLY_EMAIL = 'no-reply@multicoins.org'; //change no-reply email
