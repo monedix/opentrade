@@ -7,10 +7,12 @@ Step-by-step install instructions:
 
 # you can run this script from root or sudo user
 
-apt-get update
-apt-get install build-essential libssl-dev curl -y
+sudo apt update
+sudo apt install build-essential libssl-dev curl -y
 curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh -o install_nvm.sh
-bash install_nvm.sh
+sudo chmod +x install_nvm.sh
+sudo bash install_nvm.sh
+
 reboot
 
 nvm install 8.0.0
@@ -23,7 +25,7 @@ npm install -g forever
 ```
 
 ## Here is an example of the file ~/opentrade/server/modules/private_constants.js Edit with your configs.
-```
+
 'use strict';
 
 exports.recaptcha_priv_key = 'YOUR_GOOGLE_RECAPTCHA_PRIVATE_KEY';
@@ -36,22 +38,24 @@ exports.walletspassphrase = {
     'BTC' : 'LONG_RANDOM_STRING3',
     'DOGE' : 'LONG_RANDOM_STRING4'
 };
-```
+
 
 **After, you can run exchange**
 
 ```
 cd ~/opentrade/databaseServer
 forever start main.js
+
 # if you see NodeJS Forever package minUptime and spinSleepTime warnings then run below command
 forever start --minUptime 1000 --spinSleepTime 1000 main.js
 
 cd  ~/opentrade/server
 forever start main.js
+
 # if you see NodeJS Forever package minUptime and spinSleepTime warnings then run below command
 forever start --minUptime 1000 --spinSleepTime 1000 main.js
 
-```
+
 
 In your browser address bar, type https://127.0.0.1
 You will see OpenTrade.
