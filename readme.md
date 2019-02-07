@@ -1,5 +1,8 @@
 # OpenTrade is the best opensource cryptocurrency exchange!
 
+For build this you need NPM, Node and Forever-Service
+
+
 Live version: https://tradegloby.pro/
 
 
