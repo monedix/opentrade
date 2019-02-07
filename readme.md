@@ -5,7 +5,8 @@ Live version: https://tradegloby.pro/
 
 Step-by-step install instructions:
 
-```
+# you can run this script from root or sudo user
+
 apt-get update
 apt-get install build-essential libssl-dev curl -y
 curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh -o install_nvm.sh
