@@ -1,10 +1,10 @@
 {
-  "name": "OpenTrade",
+  "name": "opentrade",
   "version": "0.2.0",
   "description": "Open Source Cryptocurrency Exchange",
   "repository": {
     "type": "git",
-    "url": "https://github.com/3s3s/opentrade.git"
+    "url": "git+https://github.com/3s3s/opentrade.git"
   },
   "dependencies": {
     "express": "latest",
@@ -13,5 +13,16 @@
     "sqlite3": "latest",
     "ejs": "latest",
     "cors": "latest"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/3s3s/opentrade/issues"
+  },
+  "homepage": "https://github.com/3s3s/opentrade#readme",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
