@@ -3,7 +3,7 @@
 For build this you need NPM, Node and Forever-Service
 
 
-Live version: https://tradegloby.pro/
+Live version:https://market.reyna.io/ 
 
 
 Step-by-step install instructions:
